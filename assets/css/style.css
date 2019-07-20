@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  cursor: pointer;
+}
+
+nav {
+  background-color: white !important;
+}
+
+.navbar-item, .navbar-link {
+  color: black !important;
+}
+
+.navbar-item:hover {
+  background-color: white !important;
+}
+
+.navbar-menu a:before, .navbar-menu a:after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: ' ';
+    background: #000000;
+    transition: all 0.4s;
+}
+
+.navbar-menu a:before {
+    left: 0px;
+    bottom: 0px;
+}
+
+.navbar-menu a:after {
+    right: 0px;
+    top: 0px;
+}
+
+.navbar-menu a:hover:before, .navbar-menu a:hover:after {
+    opacity: 1;
+    width: 100%;
+}
+
+#landing {
+  height: 100vh;
+}
+
+#landing .text-section {
+  text-align: center;
+  font-family: 'Megrim', cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  user-select: none;
+  transform: translate(-50%,-50%);
+}
+
+#landing .text-section h1 {
+  /* padding: .3em; */
+  margin: 0;
+  color: rgba(0, 0, 0, 0.68);
+  font-weight: 900 !important;
+  font-size: 3rem !important;
+}
+
+#landing .text-section p {
+  display: inline-block;
+  color: rgba(2, 2, 2, 0.68);
+  font-weight: 700;
+}
+
+#landing a {
+  color: black;
+  text-align: center;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+#vision h1 {
+  height: 100vh;
+  font-family: 'Saira', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+#mission h1 {
+  height: 100vh;
+  font-family: 'Saira', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
