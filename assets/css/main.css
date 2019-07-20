@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+canvas {
+  height: 100vh;
+  width: 100vw;
+  border: 1px soild black;
+}
+
+.text-section {
+  text-align: center;
+  font-family: 'Megrim', cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  user-select: none;
+  transform: translate(-50%,-50%);
+}
+
+#landing .text-section h1 {
+  /* padding: .3em; */
+  margin: 0;
+  color: rgba(255,255,255,.68);
+  font-weight: 900 !important;
+  font-size: 3rem !important;
+}
+
+#landing .text-section p {
+  display: inline-block;
+  color: rgba(255,255,255,.68);
+  font-weight: 700;
+}
+
+nav {
+  background-color: black !important;
+}
+
+.navbar-item, .navbar-link {
+  color: white !important;
+}
+
+.navbar-item:hover {
+  background-color: black !important;
+}
+
+/* Border X get width  */
+.navbar-menu a:before, .navbar-menu a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+.navbar-menu a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+.navbar-menu a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+.navbar-menu a:hover:before, .navbar-menu a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
