@@ -6,33 +6,46 @@
     <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
     <link href='assets/css/bulma.min.css' rel='stylesheet'>
     <link href='assets/css/style.css' rel='stylesheet'>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-        G'Xtron Innovations
-        <!--<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">-->
-        </a>
+    <!-- Navbar Begins -->
+    <nav class="menu">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+        <label class="menu-open-button" for="menu-open">
+            <span class="hamburger hamburger-1"></span>
+            <span class="hamburger hamburger-2"></span>
+            <span class="hamburger hamburger-3"></span>
+        </label>
 
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        </a>
-    </div>
+        <a href="index.html" class="menu-item"> <i class="fas fa-home"></i> </a>
+        <a href="services.html" class="menu-item"> <i class="fas fa-user-cog"></i> </a>
+        <a href="products.html" class="menu-item"> <i class="fas fa-toolbox"></i> </a>
+        <a href="about.html" class="menu-item"> <i class="fas fa-users"></i> </a>
+        <a href="contact.html" class="menu-item"> <i class="fas fa-envelope-open-text"></i> </a>
 
-    <div class="navbar-menu">
-        <div class="navbar-end">
-            <a class="navbar-item" href="index.html">Home</a>
-            <a class="navbar-item" href="#">Products</a>
-            <a class="navbar-item" href="services.html">Services</a>
-            <a class="navbar-item" href="about.html">About Us</a>
-            <a class="navbar-item" href="contact.html">Contact Us</a>
-        </div>
-
-    </div>
     </nav>
+    <!-- filters -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="shadowed-goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                <feComposite in2="shadow" in="goo" result="goo" />
+                <feComposite in2="goo" in="SourceGraphic" result="mix" />
+            </filter>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feComposite in2="goo" in="SourceGraphic" result="mix" />
+            </filter>
+        </defs>
+    </svg>
+    <!-- Navbar Ends -->
 
 
 
