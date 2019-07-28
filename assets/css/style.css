@@ -300,6 +300,10 @@ article:hover {
   color: white !important;
 }
 
+.box {
+  min-height: 176px !important;
+  min-width: 640px !important;
+}
 /* .iris:hover {
   background-color: #209cee !important;
   color: white;
@@ -334,3 +338,86 @@ article:hover {
   background-color: #209cee !important;
   color: white;
 } */
+
+/* Contact Us Page */
+.contact-page {
+  max-height: 100vh !important;
+  text-align: center !important;
+}
+
+.contact-page h2 {
+  padding-top: 1rem;
+  font-size: 1.75rem !important;
+  color: #000000;
+}
+
+.contact-page p {
+  font-size: 1.2rem !important;
+}
+
+form {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+textarea {
+  width: 100%;
+}
+
+.svg-wrapper {
+  height: 60px;
+	margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #000000;
+}
+
+.text {
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+.svg-inline--fa {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#map {
+  height: 75vh;  /* The height is 400 pixels */
+  margin-right: 15%;
+  margin-left: 15%;
+  /* border-style: solid;
+  border-color: #000000; */
+}
